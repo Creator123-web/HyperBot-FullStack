@@ -1,21 +1,12 @@
-import { useState } from 'react';
-import { QRCode } from 'qrcode.react';
+import React from 'react';
 
-export default function QRCodeScanner() {
-  const [text, setText] = useState('');
-
+const QRCodeScanner = () => {
   return (
-    <div className="p-4">
-      <input
-        type="text"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder="Enter text for QR"
-        className="p-2 border mb-2"
-      />
-      <div>
-        {text && <QRCode value={text} />}
-      </div>
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4">QR Code Scanner</h2>
+      <p>Camera access and QR scanning coming soon!</p>
     </div>
   );
-}
+};
+
+export default QRCodeScanner;
