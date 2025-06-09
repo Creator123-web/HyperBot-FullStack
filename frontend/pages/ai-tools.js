@@ -1,5 +1,4 @@
 import AIToolsList from '@/components/AIToolsList';
-import api from '../utils/api'
 
 export default function AIToolsPage() {
   return (
