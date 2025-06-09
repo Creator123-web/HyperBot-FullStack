@@ -1,28 +1,30 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-export default function PasscodeProtection({ onUnlock }) {
+const PasscodeProtection = ({ onUnlock }) => {
   const [passcode, setPasscode] = useState('');
-  const [error, setError] = useState('');
 
-  const checkPasscode = () => {
+  const handleUnlock = () => {
     if (passcode === '1234') {
       onUnlock();
     } else {
-      setError('Incorrect passcode!');
+      alert('Incorrect passcode!');
     }
   };
 
   return (
-    <div className="p-4 border rounded w-80 mx-auto mt-20 text-center">
+    <div className="flex flex-col items-center mt-10">
       <input
         type="password"
+        className="border p-2 mb-4"
+        placeholder="Enter Passcode"
         value={passcode}
         onChange={(e) => setPasscode(e.target.value)}
-        placeholder="Enter passcode"
-        className="p-2 border mb-2 w-full"
       />
-      <button onClick={checkPasscode} className="p-2 bg-blue-500 text-white w-full">Unlock</button>
-      {error && <p className="text-red-600 mt-2">{error}</p>}
+      <button onClick={handleUnlock} className="bg-blue-500 text-white px-4 py-2 rounded">
+        Unlock
+      </button>
     </div>
   );
-}
+};
+
+export default PasscodeProtection;
