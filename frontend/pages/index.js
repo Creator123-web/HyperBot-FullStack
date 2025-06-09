@@ -1,5 +1,5 @@
 import PasscodeProtection from '@/components/PasscodeProtection';
-import api from '../utils/api'
+
 
 export default function Home() {
   return (
