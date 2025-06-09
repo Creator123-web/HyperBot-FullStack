@@ -1,5 +1,5 @@
 import CodingPractice from '@/components/CodingPractice';
-import api from '../utils/api'
+
 
 export default function CodingPage() {
   return (
