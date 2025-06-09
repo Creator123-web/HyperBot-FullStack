@@ -1,0 +1,30 @@
+hyperbot-fullstack-complete/
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── seed/
+│   ├── server.js
+│   ├── package.json
+│   └── .env.example
+│
+└── frontend/
+    ├── components/
+    │   ├── AIToolsList.js
+    │   ├── CodingPractice.js
+    │   ├── PasscodeProtection.js
+    │   ├── QRCodeScanner.js
+    │   └── ShortsEditor.js
+    │
+    ├── pages/
+    │   ├── index.js
+    │   ├── login.js
+    │   ├── register.js
+    │   ├── tools.js
+    │   ├── coding.js
+    │   ├── scanner.js
+    │   └── shorts.js
+    │
+    ├── next.config.js
+    ├── package.json
+    ├── tailwind.config.js
+    └── .env.local.example
