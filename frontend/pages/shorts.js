@@ -1,5 +1,5 @@
 import ShortsEditor from '@/components/ShortsEditor';
-import api from '../utils/api'
+
 
 export default function ShortsPage() {
   return (
